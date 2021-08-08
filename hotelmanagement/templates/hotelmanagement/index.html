@@ -1,0 +1,26 @@
+<style>
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  padding: 10px;
+  background-color: pink;
+}
+</style>
+<ul>
+<li><h1><a href="{% url 'hotelmanagement:about' %}" >about</a></h1></li>
+<li><h1><a href="{% url 'hotelmanagement:contact' %}">contact</a></h1></li>
+    <li><h1><a href="{% url 'hotelmanagement:details' %}">details</a></h1></li>
+</ul>
+{% load static %}
+<img src="{% static 'hotelmanagement/hospital1.jpg' %}">
+<h1><b>welcome to flair hospitals here we have so many fecilities...</b></h1>
